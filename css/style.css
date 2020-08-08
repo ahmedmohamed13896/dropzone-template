@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 753px;
+}
+
+.mynav{
+    background-color: transparent !important;
+    background: url(../images/nav-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 3px 9px 0px #bfa7a5;
+    width: 100%;
+    padding: 0;
+}
+.mynav .mybrand{
+    max-width: 201px;
+    display: block;
+    height: 61px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+.mynav .menu-btn{
+    outline: 0;
+}
+.mynav .mybrand span{
+    background-color: transparent;
+    color: red;
+    max-width: 100%;
+    max-height: 70px;
+    margin: auto;
+}
+.mynav .mybrand img{
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 61px;
+    margin: auto;
+}
+.mynav .menu{
+    font-size: 17px;
+    font-family: 'Arial';
+}
+.mynav .menu li{
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+.mynav .menu li a.nav-link{
+    background-color: #FFF;
+    color: green;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+.overlay{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-image: url(../images/bg-min.jpg),linear-gradient(to right, #e1e4e9 , #cfd2d7);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: initial;
+    position: relative;
+    min-height: 100vh;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 65%;
+    margin: auto;
+    margin-top: 5%;
+    overflow-y: hidden;
+}
+.content >img{
+    width: 100%;
+    height: 100%;
+    max-height: 601px;
+    margin-left: -6px;
+}
+.content-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.content-box .iframe{
+    background: #FFF;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 5%;
+    left: -0.5%;
+    margin: auto;
+    max-width: 93%;
+    max-height: 63%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-box .iframe .dropzone{
+    width: 100%;
+    height: 100%;
+    max-width: 95%;
+    max-height: 95%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px dashed #00daf3;
+    color: #999;
+    border-radius: 10px;
+    min-height: 100px;
+}
+.content-box .iframe .mydropzone{
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+    max-height: 50%;
+    text-align: center;
+    background-color: transparent;
+    color: #999;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+.info-div{
+    position: absolute;
+    right: 15px;
+    margin-top: 14%;
+    background-color: #FFF;
+    width: 100%;
+    max-height: 50vh;
+    height: 100%;
+    max-width: 16%;
+}
+
+
+@media only screen and (min-width:1367px){
+    .overlay{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 755px;
+        min-height: 100vh;
+        overflow-x: hidden;
+        background-image: url(../images/bg-min.jpg),linear-gradient(to right, #b99f9e , #af9191);
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: initial;
+        position: relative;
+    }
+    .content{
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: auto;
+        max-width: 57%;
+        margin: auto;
+        margin-top: 4.5%;
+        overflow-y: hidden;
+    }
+    .content >img{
+        width: 100%;
+        height: 100%;
+        max-height: 81vh;
+        margin-left: -2px;
+    }
+    .content-box{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .content-box .iframe{
+        background: #FFF;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 5%;
+        left: 0;
+        margin: auto;
+        max-width: 91%;
+        max-height: 63%;
+        overflow: auto;
+    }
+    .info-div{
+        max-width: 19%;   
+        max-height: 35vh;
+    }
+}
+@media only screen and (max-width:1060px){
+    body{
+    }
+}
+@media only screen and (max-width:986px){
+    .mynav{
+        background: url(../images/nav-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0 10px;
+        min-height: 61px;
+    }
+    /* .bg-img{
+        padding-top: 50px;
+    }  */
+
+}
+@media only screen and (min-width:992px){
+    .nav-container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width:991px){
+    .nav-container{
+        max-width: 100%;
+    }
+    .mynav .menu li a.nav-link{
+        border-radius: 0;
+        margin: 5px auto;
+        text-align: center;
+    }
+    .mynav{
+        padding: 0 30px;
+        min-height: 61px;
+    }
+    .info-div{
+        max-height: 245px;
+    }
+}
+@media only screen and (max-height:667px) and (max-width:1060px){
+    body{
+        height: 100%;
+        min-height: 100vh;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 767px) and (orientation: portrait) {
+    .content-box .iframe .dropzone{
+        font-size: 12px;
+        min-height: 50%;
+    }
+    .overlay{
+        height: calc(100vh - 60px);
+    }
+    .unflex{
+        display: block !important;
+    }
+    .content{
+        max-width: 100%;
+    }
+    .info-div{
+        max-width: 91%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 900px) and (orientation: landscape) {
+        body{
+            min-height: 100vh;
+        }
+    .overlay{
+        background-image: radial-gradient( #baa2a0, #c5b0ad );
+        height: calc(100vh - 60px);
+    }
+    .content{
+        margin-left: 10px;
+        margin-top: 2%;
+    }
+    .info-div{
+        max-height: 75vh;
+        max-width: 27%;
+        margin-top: 2%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .content-box .iframe .dropzone{
+        font-size: 12px;
+    }
+}
+/* Ipad */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body{
+        height: 100vh;
+    }
+    .overlay{
+        max-height: calc(100vh - 61px);
+    }
+    .content{
+        max-width: 81%;
+        margin-left: 15px;
+    }
+    .info-div{
+        max-height: 300px;
+        margin-top: 12%;
+    }
+}
+
+/* Ipad pro Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (min-height:768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body{
+        height: 100vh;
+    }
+    .overlay{
+        max-height: calc(100vh - 61px);
+    }
+}
+
