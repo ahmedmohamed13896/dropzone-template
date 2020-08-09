@@ -190,7 +190,7 @@ body{
         top: 0;
         width: 100%;
         height: auto;
-        max-width: 63%;
+        max-width: 71%;
         margin: auto;
         margin-top: 4.5%;
         overflow-y: hidden;
@@ -221,14 +221,11 @@ body{
         overflow: auto;
     }
     .info-div{
-        max-width: 17%;
-        max-height: 35vh;
+        max-width: 13%;
+        max-height: 40vh;
     }
 }
-@media only screen and (max-width:1060px){
-    body{
-    }
-}
+
 @media only screen and (max-width:986px){
     .mynav{
         background: url(../images/nav-bg.jpg);
