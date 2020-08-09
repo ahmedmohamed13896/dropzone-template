@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/dropzone.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Layout1</title>
 </head>
 <body>
     <nav class="navbar navbar-light navbar-expand-lg navbar-default sticky-top mynav">
@@ -20,44 +20,22 @@
             </button>
             <div class="container nav-container">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto menu menu1">                   
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu 1
-                            </a>
-                            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu 2
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu 3
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-
+                    <ul class="navbar-nav mr-auto list list1">                   
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Toturial</a>
+                            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" data-link="#menu-div1">Menu 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" data-link="#menu-div2">Menu 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" data-link="#menu-div3">Menu 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" data-link="#tutorial">Tutorial</a>
                         </li>
                         
                     </ul>
-                    <ul class="navbar-nav mr-auto menu menu2">                   
+                    <ul class="navbar-nav mr-auto list list2">                   
                         <li class="nav-item">
                             <a class="nav-link" href="#">Sign out</a>
                         </li> 
@@ -72,13 +50,52 @@
             <section class="content">
                 <img src="images/screen.png" alt="screen">
                 <div class="content-box">
-                    <div class="iframe">
+                    <div class="dropzone-container">
                         <div class="mydropzone">
                             <form action="/file_upload" class="dropzone" id='myUploader'>
                                 <div class="fallback">
                                     <input name="file" type="file" multiple />
                                 </div>
                             </form>
+                        </div>
+                        <div class="menu-selected">
+                            <div class="menu-div" id="menu-div1">
+                                <form class="form-menu1">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="menu-div" id="menu-div2">
+                                <p> menu 2 </p>
+                            </div>
+                            <div class="menu-div" id="menu-div3">
+                                <p> menu 3 </p>
+                            </div>
+                            <div class="menu-div" id="tutorial">
+                                <p> 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
