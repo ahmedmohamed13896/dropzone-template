@@ -35,9 +35,9 @@
                         </li>
                         
                     </ul>
-                    <ul class="navbar-nav mr-auto list list2">                   
+                    <ul class="navbar-nav mr-auto ml-auto list list2">                   
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sign out</a>
+                            <a class="nav-link" href="index.html" >Sign out</a>
                         </li> 
                     </ul>
                 </div>
@@ -45,69 +45,67 @@
         </div>
         
     </nav>
-    <div class="overlay">
-        <div class="container-fluid d-flex unflex">
-            <section class="content">
-                <img src="images/screen.png" alt="screen">
-                <div class="content-box">
-                    <div class="dropzone-container">
-                        <div class="mydropzone">
-                            <form action="/file_upload" class="dropzone" id='myUploader'>
-                                <div class="fallback">
-                                    <input name="file" type="file" multiple />
+    <section class="bg">
+        <div class="box-container">
+            <div class="content-box">
+                <div class="dropzone-container">
+                    <div class="mydropzone">
+                        <form action="/file_upload" class="dropzone" id='myUploader'>
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="menu-selected">
+                        <div class="menu-div" id="menu-div1">
+                            <form class="form-menu1">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
-                        <div class="menu-selected">
-                            <div class="menu-div" id="menu-div1">
-                                <form class="form-menu1">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                    </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                            </div>
-                            <div class="menu-div" id="menu-div2">
-                                <p> menu 2 </p>
-                            </div>
-                            <div class="menu-div" id="menu-div3">
-                                <p> menu 3 </p>
-                            </div>
-                            <div class="menu-div" id="tutorial">
-                                <p> 
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                        <div class="menu-div" id="menu-div2">
+                            <p> menu 2 </p>
+                        </div>
+                        <div class="menu-div" id="menu-div3">
+                            <p> menu 3 </p>
+                        </div>
+                        <div class="menu-div" id="tutorial">
+                            <p> 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum unde omnis, optio nemo mollitia, sed est eveniet sint eius quam quod doloribus sapiente odit exercitationem, fugit dolor tenetur rerum!
 
-                                </p>
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="info-div">
-                <p class="text-center">Info Area</p>
             </div>
-        </div> 
-    </div>
+
+        </div>
+        <div class="info-div">
+            
+        </div>
+    </section>
     
 
-
+    
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

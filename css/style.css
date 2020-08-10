@@ -1,21 +1,21 @@
 *{
     box-sizing: border-box;
 }
-body{
+body,html{
     margin: 0;
     padding: 0;
+    position: relative;
     width: 100%;
-    height: 753px;
+    height: calc(100vh - 61px);
 }
 
 .mynav{
     background-color: transparent !important;
-    background: url(../images/nav-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     box-shadow: 1px 3px 9px 0px #bfa7a5;
     width: 100%;
     padding: 0;
+    background: url(../images/nav-bg.jpg);
+    position: fixed;
 }
 .mynav .mybrand{
     max-width: 201px;
@@ -57,53 +57,34 @@ body{
     border-radius: 3px;
     cursor: pointer;
 }
-.overlay{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    background-image: url(../images/bg-min.jpg),linear-gradient(to right, #e1e4e9 , #cfd3d6);
-    background-position: center 0;
+section.bg{
+    background-image: url(../images/background1.jpg);
+    background-position: center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: initial;
-    position: relative;
-    min-height: 100vh;
-}
-.content{
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 65%;
-    margin: auto;
-    margin-top: 5%;
-    overflow-y: hidden;
-}
-.content >img{
-    width: 100%;
     height: 100%;
-    max-height: 601px;
-    margin-left: -6px;
+    width: 100%;
+    margin-top: 61px;
+    position: relative;
 }
+
+
+
+
 .content-box{
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+    padding: 10px;
 }
 .content-box .dropzone-container{
     background: #FFF;
     height: 100%;
     width: 100%;
     position: relative;
-    top: 5%;
-    left: -0.5%;
     margin: auto;
-    max-width: 93%;
-    max-height: 63%;
     overflow: auto;
     display: flex;
     justify-content: center;
@@ -130,6 +111,7 @@ body{
     width: 100%;
     height: 100%;
     max-width: 50%;
+    min-width: 130px;
     max-height: 50%;
     text-align: center;
     background-color: transparent;
@@ -150,98 +132,34 @@ body{
 .menu-selected .menu-div{
     height: auto;
     text-align: left;
-    padding: 15px;
     display: none;
 }
 
 .info-div{
     position: absolute;
-    right: 15px;
-    margin-top: 14%;
-    background-color: #FFF;
-    width: 100%;
-    max-height: 50vh;
-    height: 100%;
-    max-width: 16%;
+    height: 48%;
+    top: 14%;
+    right: 1%;
+    background: #FFF;
+    width: 16%;
 }
 .form-menu1{
     width: 100%;
     height: auto;
 }
-
-@media only screen and (min-width:1367px){
-    .overlay{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        max-height: 755px;
-        min-height: 100vh;
-        overflow-x: hidden;
-        background-image: url(../images/bg-min.jpg),linear-gradient(to right, #b99f9e , #af9191);
-        background-position: center 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: initial;
-        position: relative;
-    }
-    .content{
-        position: relative;
-        top: 0;
-        width: 100%;
-        height: auto;
-        max-width: 71%;
-        margin: auto;
-        margin-top: 4.5%;
-        overflow-y: hidden;
-    }
-    .content >img{
-        width: 100%;
-        height: 100%;
-        max-height: 90vh;
-        margin-left: -2px;
-    }
-    .content-box{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .content-box .dropzone-container{
-        background: #FFF;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        top: 5%;
-        left: 0;
-        margin: auto;
-        max-width: 91%;
-        max-height: 63%;
-        overflow: auto;
-    }
-    .info-div{
-        max-width: 13%;
-        max-height: 40vh;
-    }
+.box-container{
+    position: absolute;
+    top: 14.29%;
+    height: 46.997%;
+    left: 22.268421053%;
+    width: 55.03%;
+    background: #FFF;
 }
 
-@media only screen and (max-width:986px){
-    .mynav{
-        background: url(../images/nav-bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 0 10px;
-        min-height: 61px;
-    }
-    /* .bg-img{
-        padding-top: 50px;
-    }  */
-
-}
 @media only screen and (min-width:992px){
     .nav-container{
-        max-width: 960px;
+        max-width: 100%;
+        width: 75%;
     }
 }
 @media only screen and (max-width:991px){
@@ -258,103 +176,82 @@ body{
         min-height: 61px;
         position: fixed;
     }
-    .info-div{
-        max-height: 245px;
-    }
-    .overlay{
-        margin-top:61px;
-    }
 }
-@media only screen and (max-height:667px) and (max-width:1060px){
-    body{
-        max-height: 753px;
-        min-height: 100vh;
-    }
-}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 767px) and (orientation: portrait) {
     .content-box .dropzone-container .dropzone{
         font-size: 12px;
         min-height: 50%;
     }
-    .overlay{
-        max-height: 100%;
-        overflow-y: hidden;
-        height: auto;
-    }
-    .unflex{
-        display: block !important;
-    }
-    .content{
-        max-width: 100%;
-    }
-    .info-div{
-        max-width: 91%;
-        margin: 20px auto;
-    }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 900px) and (orientation: landscape) {
-        body{
-            min-height: 100vh;
-            height: 100%;
-        }
-    .overlay{
-        background-image: radial-gradient( #baa2a0, #c5b0ad );
-        margin-top: 61px;
-    }
-    .content{
-        margin-left: 10px;
-        margin-top: 2%;
-    }
-    .info-div{
-        max-height: 75vh;
-        max-width: 27%;
-        margin-top: 2%;
-    }
-}
 @media only screen and (max-width: 650px) {
     .content-box .dropzone-container .dropzone{
         font-size: 12px;
     }
-    body{
+    /* body{
         margin-top:61px;
         background-image: linear-gradient(to right, #e1e4e9 , #cfd2d7);
+    } */
+}
+
+@media only screen and (max-width: 300px) {
+    .mynav .mybrand img{
+        max-width: 85%;
+    }
+    .mynav{
+        padding: 0;
+    }
+    .mynav .container-fluid{
+        max-width: 100% !important;
+        padding: 0 5px;
     }
 }
-/* Ipad */
-/* Portrait */
+
+/*Ipad*/
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    body{
-        height: 100vh;
-    }
-    .overlay{
-        max-height: calc(100vh - 61px);
-    }
-    .content{
-        max-width: 81%;
-        margin-left: 15px;
-    }
-    .info-div{
-        max-height: 300px;
-        margin-top: 12%;
+  and (-webkit-min-device-pixel-ratio: 2) {
+    section.bg{
+        background-image: url(../images/background-ipad.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        margin-top: 61px;
+        position: relative;
     }
 }
-
-/* Ipad pro Landscape */
+/*Ipad pro*/
 @media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (min-height:768px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body{
-        height: 100vh;
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2){
+     section.bg{
+        background-image: url(../images/background-ipad-pro.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        margin-top: 61px;
+        position: relative;
     }
-    .overlay{
-        max-height: calc(100vh - 61px);
+}
+/*Phones*/
+@media (max-width:480px){
+    section.bg{
+        background-image: url(../images/background-phones.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        margin-top: 61px;
+        position: relative;
     }
 }
